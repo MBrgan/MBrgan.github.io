@@ -1,0 +1,184 @@
+@import url('https://fonts.cdnfonts.com/css/open-sans');
+@import url('https://fonts.cdnfonts.com/css/oswald-4');
+
+body {
+
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(221, 221, 221);
+    margin: 0 0 80px 0 ;
+}
+
+.TitleText, .SubTitleText, .LargeText, .MediumText, .SmallText{
+    font-family: 'Oswald Regular', sans-serif;
+}
+.TitleText{
+    font-size:60px;
+    letter-spacing: 2px;
+    text-align: center;
+    color:#3c78d8;
+}
+.SubTitleText{
+    font-size:30px;
+    color:#4a87e9;
+}
+.TitleBox{
+    margin: 15px auto;
+    text-align: center;
+    border-top: 10px solid #3c78d8;
+    border-bottom: 10px solid #3c78d8;
+}
+.ProjectImage{
+    display: block;
+    margin: 0 auto;
+    width: 98%;
+    border: 2px solid #4a4a4a;
+    aspect-ratio: 4/3;
+}
+.SplitBox{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    column-gap: 0.5%;
+    width: 100%;
+}
+.LargeText{
+    font-size:18px;
+    letter-spacing: 1px;
+}
+.MediumText{
+    font-size:16px;
+    letter-spacing: 1px;
+}
+.SmallText{
+    font-size:14px;
+}
+
+.break {
+
+    height: 0;
+}
+
+p{
+    margin-top: 0;
+}
+
+.TopNavBar{
+    display: grid;
+    grid-template-columns: 150px 120px 120px 120px 120px;
+    width: 100%;
+    min-height: 65px;
+    background-color:#333333;
+    color: white;
+    position: sticky;
+    top: 0;
+    border-bottom: 5px solid #6d9eeb;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+.Footer{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 55px;
+    background-color:#333333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    border-top: 5px solid #6d9eeb;
+    margin-top: 20px;
+
+}
+.FooterContent{
+    padding-left: 5px;
+    color:white;
+    font-family: 'Oswald Regular', sans-serif;
+}
+
+.NavButton, .NameButton{
+    color:white;
+    background-color:transparent;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    width: 100%;
+    height: 100%;
+    font-family: 'Oswald Regular', sans-serif;
+}
+.ProjectButton{
+    cursor: pointer;
+    border: none;
+    background-color: #3c78d8;
+    color:white;
+    width: auto;
+    padding: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    transition: background-color 0.2s;
+}
+
+.ProjectButton:hover{
+    background-color: #3066bb;
+}
+
+.NavButton:hover, .NameButton:hover{
+    background-color: #ffffff25;
+}
+
+.ContentBox, .SubContentBox{
+    position: relative;
+    height: auto;
+    background-color: white;
+    padding: 10px;
+    color:#4a4a4a;
+}
+.ContentBox{
+    margin: 0 auto;
+    width: 60%;
+    height: 100%;
+    min-width: auto;
+
+    box-shadow: -10px 10px 5px grey;
+}
+.SubContentBox{
+    min-width: 0;
+    margin: 5px;
+    border: 2px solid #4a4a4a;
+
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 3% auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 80%; 
+  }
+  
+  .close {
+    margin: 10px 10px 10px auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: 30px;
+    font-size: 60px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
